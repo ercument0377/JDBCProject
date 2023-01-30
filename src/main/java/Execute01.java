@@ -20,7 +20,10 @@ public class Execute01 {
 
 
         //4.adım: Query (sorgu) olustur
-       boolean sql1 = st.execute("Create Table workers(worker_id VARCHAR(20),worker_name VARCHAR(20), worker_salary INT)");
+
+        // 1: Ornek: "workers" adinda bir table olusturup "worker_id, worker_name, worker_salary" sutunlarini ekleyin
+
+        boolean sql1 = st.execute("Create Table workers(worker_id VARCHAR(20),worker_name VARCHAR(20), worker_salary INT)");
         System.out.println("sql1 = " + sql1); //false dondurur cunku data cağırmıyoruz sadece olusturduk
 
         /*
@@ -32,9 +35,11 @@ public class Execute01 {
 
         //2. Ornek: Table'a worker_address sutunu ekleyerek alter yapin
 
+
         String sql2 = "Alter Table workers Add worker_address VARCHAR(80)";
        boolean sql2a = st.execute(sql2);
-        System.out.println("sql2a = " + sql2a);
+        System.out.println("sql2a = " + sql2a); //false dondurur
+
 
         //3.Ornek: workers table'ini silin
 
