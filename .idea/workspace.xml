@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbf5bcd0-5d7c-466d-a1dc-8b10914c9e92" name="Changes" comment="" />
+    <list default="true" id="dbf5bcd0-5d7c-466d-a1dc-8b10914c9e92" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +47,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.MedunaTest.medunaTest">
+  <component name="RunManager" selected="JUnit.CountriesTest.countryTest">
     <configuration name="JdbcUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JdbcUtils" />
       <module name="JDBCProject" />
@@ -91,11 +93,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MedunaTest.medunaTest" />
-        <item itemvalue="JUnit.MedunaTest" />
         <item itemvalue="JUnit.CountriesTest.countryTest" />
+        <item itemvalue="JUnit.MedunaTest.medunaTest" />
         <item itemvalue="Application.Runner" />
         <item itemvalue="Application.JdbcUtils" />
+        <item itemvalue="JUnit.MedunaTest" />
       </list>
     </recent_temporary>
   </component>
