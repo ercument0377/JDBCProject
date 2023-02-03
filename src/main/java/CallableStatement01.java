@@ -44,6 +44,7 @@ public class CallableStatement01 {
         //2.Adim: Function'i calistir
         st.execute(sql2);
 
+
         //3.Adim: Function'i cagir
         CallableStatement cs2 = con.prepareCall("{? = call koniHacmiF (?, ?)}");
         //4.Adim: Return icin registerOurParameter(), parametrelere icin set() ...... methodlarimizi uygulariz

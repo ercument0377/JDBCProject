@@ -19,7 +19,7 @@ public class ExecuteQuery02 {
             System.out.println(rs1.getString("company_id")+ "---"+rs1.getString("company")+"--"+ rs1.getString("number_of_employees"));
         }
 
-        System.out.println("---------------------------------------");
+        System.out.println("----------yukarisi 1. yol------");
 
 
         //2.yol

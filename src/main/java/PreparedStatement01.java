@@ -10,11 +10,12 @@ public class PreparedStatement01 {
         Statement st = con.createStatement();
         /*
         PreparedStatement interfacedir, birden çok kez çalıştırılabilen önceden derlenmiş bir sql kodunu temsil eder
-       PreparedStatement, Parametrelendirilmiş sql sorguları (query) ile çalışır, bu sorguyu 0 veya daha fazla parametre ile kullanabiliriz
+        PreparedStatement, Parametrelendirilmiş sql sorguları (query) ile çalışır, bu sorguyu 0 veya daha fazla parametre ile kullanabiliriz
 
          */
 
         //1. Orn: PreparedStatement kullanarak company adi IBM olan number_of_employees degerini 9999 olarak guncelleyin
+
         //1. Adim: PreparedStament Query olustur (paramatre yerine ? yazdik)
         String sql1 ="Update companies Set number_of_employees =? Where company =?";
 
@@ -31,13 +32,18 @@ public class PreparedStatement01 {
         String sql1a= "Select * from companies";
         ResultSet resultSet1 = st.executeQuery(sql1a);
 
+        System.out.println("--------yukarisi 1. Ornek--------------");
+
         while (resultSet1.next()){
             System.out.println(resultSet1.getString("company_id")+ "---"+resultSet1.getString("company")+"--"+ resultSet1.getString("number_of_employees"));
         }
+
+
 //2. Orn: PreparedStatement kullanarak company adi GOOGLE olan number_of_employees degerini 5555 olarak guncelleyin
         ps1.setInt(1, 5555);
         ps1.setString(2, "GOOGLE");
-        System.out.println("---------------------------");
+
+        System.out.println("--------yukarisi 2. Ornek--------------");
 
         int guncellenenSatirSayisi2 =  ps1.executeUpdate();
         System.out.println("guncellenenSatirSayisi2 = " + guncellenenSatirSayisi2);

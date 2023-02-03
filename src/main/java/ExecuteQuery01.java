@@ -28,7 +28,7 @@ public class ExecuteQuery01 {
 //2. orn: "region_id'nin 2'den buyuk oldugu "country_id" ve "country_name" degerlerini cagirin
 
         String sql2 = "Select country_id, country_name from countries Where region_id> 2";
-        ResultSet  rs2 = st.executeQuery(sql2);
+       ResultSet rs2 = st.executeQuery(sql2);
 
         System.out.println("----------------------------");
         while (rs2.next()){
@@ -53,7 +53,7 @@ public class ExecuteQuery01 {
 
         String sql3 =" SELECT * From companies Where number_of_employees =10000";/// 10000 olan rakam hardcoding onun yerine asagidakini yaz
         String sql3a ="SELECT * From companies Where number_of_employees = (Select Min(number_of_employees) From companies)";
-        ResultSet rs3 = st.executeQuery(sql3a);
+        ResultSet rs3= st.executeQuery(sql3a);
 
         while (rs3.next()){
             System.out.println(rs3.getString(1)+ "--"+ rs3.getString(2)+ "--"+rs3.getString(3));
