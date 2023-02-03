@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbf5bcd0-5d7c-466d-a1dc-8b10914c9e92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CountriesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MedunaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CallableStatement01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CallableStatement01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExecuteQuery01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExecuteQuery01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExecuteQuery02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExecuteQuery02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JdbcUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PreparedStatement01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PreparedStatement01.java" afterDir="false" />
-    </list>
+    <list default="true" id="dbf5bcd0-5d7c-466d-a1dc-8b10914c9e92" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +45,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.MedunaTest">
+  <component name="RunManager" selected="JUnit.MedunaTest.medunaTest">
     <configuration name="JdbcUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JdbcUtils" />
       <module name="JDBCProject" />
@@ -102,8 +91,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MedunaTest" />
         <item itemvalue="JUnit.MedunaTest.medunaTest" />
+        <item itemvalue="JUnit.MedunaTest" />
         <item itemvalue="JUnit.CountriesTest.countryTest" />
         <item itemvalue="Application.Runner" />
         <item itemvalue="Application.JdbcUtils" />

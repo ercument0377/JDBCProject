@@ -9,20 +9,20 @@ import java.util.List;
 
 public class MedunaTest {
     /*
-Given user connects to database
-    (hostname: medunna.com, DatabaseName: medunna_db, Username: medunna_user, Password: medunna_pass_987
-When user sends the query to get the names of created_by column from "room" table
-Then Assert that there are some rooms created by "john_doe"
-And user closes the connection
- */
+    Given user connects to database
+        (hostname: medunna.com, DatabaseName: medunna_db, Username: medunna_user, Password: medunna_pass_987
+    When user sends the query to get the names of created_by column from "room" table
+    Then Assert that there are some rooms created by "john_doe"
+    And user closes the connection
+     */
     @Test
     public void medunaTest() throws SQLException {
         //Given user connects to the database
-        JdbcUtils.connectToDataBase("medunna.com", "medunna_db", "medunna_user","medunna_pass_987");
+        JdbcUtils.connectToDataBase("medunna.com", "medunna_db", "medunna_user", "medunna_pass_987");
         Statement statement = JdbcUtils.createStatement();
 
         //When user sends the query to get the names of created_by column from "room" table
-        String sql = "Select create by From room";
+        String sql = "Select created_by From room";
         ResultSet resultSet1 = statement.executeQuery(sql);
 
         List<String> createByName = new ArrayList<>();
@@ -31,16 +31,12 @@ And user closes the connection
         }
         System.out.println("createByName = " + createByName);
 
-        //Then Assert that there are some rooms created by "john_doe"
+        // Then Assert that there are some rooms created by "john_doe"
 
         Assert.assertTrue(createByName.contains("john_doe"));
 
         //And user closes the connection
         JdbcUtils.closeConnectionVeStatement();
+
     }
-
-
-
-
-
 }
